@@ -1,0 +1,69 @@
+﻿/** Jonathan So, jonso.gamedev@gmail.com
+ * Based on OctoManGames' "Not Galaga" tutorial. An enemy moves on a path and then is destroyed when reaching the end.
+ */
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyPathMovement : MonoBehaviour {
+
+	// Path Info
+	public Path pathToFollow;
+	public int currentWayPointID = 0;
+	public float speed = 12; 
+	public float reachDistance = 0.4f; // If we're this close to the waypoint, we've reached it and can move on to the next.
+	public float rotationSpeed = 5f;
+	public bool useBezier = false;
+
+	private float distance; // Current distance to the next waypoint. 
+
+	// Update is called once per frame
+	void Update () {
+		MoveOnPath(pathToFollow);
+	}
+
+	void MoveOnPath(Path path) {
+		if (useBezier) {
+			// Movement
+			distance = Vector3.Distance(path.bezierObjList[currentWayPointID], transform.position);
+			transform.position = Vector3.MoveTowards(transform.position, path.bezierObjList[currentWayPointID], speed * Time.deltaTime);
+//			// Rotation
+//			var dir = (path.bezierObjList[currentWayPointID] - transform.position);
+//			if (dir != Vector3.zero) {
+//				// dir.z = 0;
+//				dir = dir.normalized;
+//				var destRotation = Quaternion.LookRotation(dir);
+//				transform.rotation = Quaternion.Slerp(transform.rotation, destRotation, rotationSpeed * Time.deltaTime);
+//			}
+		} else {
+			// Movement
+			distance = Vector3.Distance(path.pathObjList[currentWayPointID].position, transform.position);
+			transform.position = Vector3.MoveTowards(transform.position, path.pathObjList[currentWayPointID].position, speed * Time.deltaTime);
+//			// Rotation
+//			var dir = (path.pathObjList[currentWayPointID].position - transform.position);
+//			if (dir != Vector3.zero) {
+//				// dir.z = 0;
+//				dir = dir.normalized;
+//				var destRotation = Quaternion.LookRotation(dir);
+//				transform.rotation = Quaternion.Slerp(transform.rotation, destRotation, rotationSpeed * Time.deltaTime);
+//			}
+		}
+		if (useBezier) {
+			if (distance <= reachDistance) {
+				currentWayPointID++;
+			}
+			if (currentWayPointID >= path.bezierObjList.Count) {
+				// currentWayPointID = 0;
+				this.gameObject.SetActive(false);
+			}
+		} else {
+			if (distance <= reachDistance) {
+				currentWayPointID++;
+			}
+			if (currentWayPointID >= path.pathObjList.Count) {
+				// currentWayPointID = 0;
+				this.gameObject.SetActive(false);
+			}
+		}
+	}
+}
