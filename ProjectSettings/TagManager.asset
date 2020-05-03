@@ -8,6 +8,7 @@ TagManager:
   - EnemyBullet
   - GroundEnemy
   - AirEnemy
+  - ActiveField
   layers:
   - Default
   - TransparentFX

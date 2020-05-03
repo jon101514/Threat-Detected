@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class EnemyPathMovement : MonoBehaviour {
 
-	// Path Info
+	// PUBLIC 
 	public Path pathToFollow;
 	public int currentWayPointID = 0;
 	public float speed = 12; 
@@ -15,10 +15,10 @@ public class EnemyPathMovement : MonoBehaviour {
 	public float rotationSpeed = 5f;
 	public bool useBezier = false;
 
+	// PRIVATE
 	private float distance; // Current distance to the next waypoint. 
 
-	// Update is called once per frame
-	void Update () {
+	private void Update () {
 		MoveOnPath(pathToFollow);
 	}
 
@@ -27,41 +27,23 @@ public class EnemyPathMovement : MonoBehaviour {
 			// Movement
 			distance = Vector3.Distance(path.bezierObjList[currentWayPointID], transform.position);
 			transform.position = Vector3.MoveTowards(transform.position, path.bezierObjList[currentWayPointID], speed * Time.deltaTime);
-//			// Rotation
-//			var dir = (path.bezierObjList[currentWayPointID] - transform.position);
-//			if (dir != Vector3.zero) {
-//				// dir.z = 0;
-//				dir = dir.normalized;
-//				var destRotation = Quaternion.LookRotation(dir);
-//				transform.rotation = Quaternion.Slerp(transform.rotation, destRotation, rotationSpeed * Time.deltaTime);
-//			}
 		} else {
 			// Movement
 			distance = Vector3.Distance(path.pathObjList[currentWayPointID].position, transform.position);
 			transform.position = Vector3.MoveTowards(transform.position, path.pathObjList[currentWayPointID].position, speed * Time.deltaTime);
-//			// Rotation
-//			var dir = (path.pathObjList[currentWayPointID].position - transform.position);
-//			if (dir != Vector3.zero) {
-//				// dir.z = 0;
-//				dir = dir.normalized;
-//				var destRotation = Quaternion.LookRotation(dir);
-//				transform.rotation = Quaternion.Slerp(transform.rotation, destRotation, rotationSpeed * Time.deltaTime);
-//			}
 		}
 		if (useBezier) {
-			if (distance <= reachDistance) {
+			if (distance <= reachDistance) { // Move to the next waypoint.
 				currentWayPointID++;
 			}
-			if (currentWayPointID >= path.bezierObjList.Count) {
-				// currentWayPointID = 0;
+			if (currentWayPointID >= path.bezierObjList.Count) { // Reached the end of the path, deactivate ourselves
 				this.gameObject.SetActive(false);
 			}
 		} else {
-			if (distance <= reachDistance) {
+			if (distance <= reachDistance) { // Move to the next waypoint.
 				currentWayPointID++;
 			}
-			if (currentWayPointID >= path.pathObjList.Count) {
-				// currentWayPointID = 0;
+			if (currentWayPointID >= path.pathObjList.Count) { // Reached the end of the path, deactivate ourselves
 				this.gameObject.SetActive(false);
 			}
 		}

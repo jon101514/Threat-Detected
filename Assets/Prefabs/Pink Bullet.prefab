@@ -69,8 +69,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dir: {x: 0, y: -1}
-  speed: 4
-  lifeTime: 4
+  speed: 5
+  lifeTime: 5
 --- !u!212 &212173910990768912
 SpriteRenderer:
   m_ObjectHideFlags: 1

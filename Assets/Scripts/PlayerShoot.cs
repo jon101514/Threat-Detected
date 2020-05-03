@@ -15,7 +15,8 @@ public class PlayerShoot : MonoBehaviour {
 	private List<GameObject> clip;
 
 	// CONSTANT
-	private const int CLIP_SIZE = 32; // Size of the object pool.
+	private const int CLIP_SIZE = 64; // Size of the object pool.
+	private const float FIRE_THREAT = 0.2f; // How much threat to add for each bullet fired.
 
 	// COMPONENT
 	private Transform tm;
@@ -32,8 +33,9 @@ public class PlayerShoot : MonoBehaviour {
 
 	private void Update() {
 		if (Input.GetKeyDown(KeyCode.J)) {
-			for (int i = 0; i < cannons.Count; i++) {
+			for (int i = 0; i < cannons.Count; i++) { // Fire all cannons.
 				FireFromPool(cannons[i]);
+				ThreatLevel.instance.AddFireLevel(FIRE_THREAT); // Add FIRE_THREAT for each bullet fired.
 			}
 		}
 	}
@@ -50,7 +52,6 @@ public class PlayerShoot : MonoBehaviour {
 	// Given a cannon's transform, fire a bullet from that cannon (with its position and rotation).
 	// param[cannon] - the transform of the cannon we want to fire from.
 	private void FireFromPool(Transform cannon) {
-		Debug.Log("FireFromPool");
 		foreach (GameObject bull in clip) {
 			if (!bull.activeInHierarchy) {
 				bull.SetActive(true);

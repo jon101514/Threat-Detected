@@ -23,14 +23,20 @@ public class EnemyAim : MonoBehaviour {
 	}
 
 	// Calculate a vector from our position to the position of the player, then send it off to the EnemyBulletPool to shoot.
+	// param[type] - the type of the bullet, as corresponding to the EnemyBulletPool. 
 	private IEnumerator WaitAndShoot(int type) {
-		oldPlayerPos = FindObjectOfType<PlayerMovement>().transform.position;
-		// Wait one second
-		yield return new WaitForSeconds(1f - Time.deltaTime);
-		newPlayerPos = FindObjectOfType<PlayerMovement>().transform.position;
-		Vector2 aimVector = (Vector2.Lerp(oldPlayerPos, newPlayerPos, Random.Range(0f, 1f)) - (Vector2) transform.position).normalized; 
-		Debug.Log("RANDOMIZED LERP");
-		EnemyBulletPool.instance.FireFromPool(type, transform, aimVector);
+		if (FindObjectOfType<PlayerMovement>() == null) {
+			oldPlayerPos = Vector2.zero;
+			newPlayerPos = -Vector2.up;
+			yield return new WaitForSeconds(1f - Time.deltaTime);
+		} else {
+			oldPlayerPos = FindObjectOfType<PlayerMovement>().transform.position;
+			// Wait one second
+			yield return new WaitForSeconds(1f - Time.deltaTime);
+			newPlayerPos = FindObjectOfType<PlayerMovement>().transform.position;
+			Vector2 aimVector = (Vector2.Lerp(oldPlayerPos, newPlayerPos, ThreatLevel.instance.GetThreatPercent()) - (Vector2) transform.position).normalized; 
+			EnemyBulletPool.instance.FireFromPool(type, transform, aimVector);
+		}
 	}
 
 	// Public coroutine-starter for LogData.
@@ -40,15 +46,24 @@ public class EnemyAim : MonoBehaviour {
 
 	// Logs the old player position, waits one second (minus a frame), then gets the new player position.
 	private IEnumerator LogData() {
-		oldPlayerPos = FindObjectOfType<PlayerMovement>().transform.position;
-		// Wait one second
-		yield return new WaitForSeconds(1f - Time.deltaTime);
-		newPlayerPos = FindObjectOfType<PlayerMovement>().transform.position;
+		if (FindObjectOfType<PlayerMovement>() == null) {
+			oldPlayerPos = Vector2.zero;
+			newPlayerPos = -Vector2.up;
+			yield return new WaitForSeconds(1f - Time.deltaTime);
+		} else {
+			oldPlayerPos = FindObjectOfType<PlayerMovement>().transform.position;
+			// Wait one second
+			yield return new WaitForSeconds(1f - Time.deltaTime);
+			newPlayerPos = FindObjectOfType<PlayerMovement>().transform.position;
+		}
 	}
 
 	// Returns the position of the player.
 	public Vector2 GetPlayerPos() {
-		Debug.Log("RANDOMIZED LERP");
-		return Vector2.Lerp(oldPlayerPos, newPlayerPos, Random.Range(0f, 1f));
+		return Vector2.Lerp(oldPlayerPos, newPlayerPos, ThreatLevel.instance.GetThreatPercent());
+	}
+
+	public void StopShoot() {
+		StopCoroutine("WaitAndShoot");
 	}
 }

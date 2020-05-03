@@ -11,6 +11,9 @@ public class Cannon : MonoBehaviour {
 	public int shotType;
 	public float shotTimer; // Wait this amount of time, then fire a shot, and repeat.
 
+	// PRIVATE
+	private bool canShoot;
+
 	// COMPONENT
 	private Transform tm;
 
@@ -19,14 +22,19 @@ public class Cannon : MonoBehaviour {
 	}
 
 	private void OnEnable() {
+		canShoot = true;
 		StartCoroutine(IntervalShoot());
 	}
 
 	// At a regular interval (shotTimer), shoot a bullet.
 	private IEnumerator IntervalShoot() {
-		while (true) {
+		while (canShoot) {
 			yield return new WaitForSeconds(shotTimer);
-			EnemyBulletPool.instance.FireFromPool(shotType, tm, -Vector2.up);
+			if (canShoot) { EnemyBulletPool.instance.FireFromPool(shotType, tm, -Vector2.up); } 
 		}
+	}
+
+	public void StopShoot() {
+		canShoot = false;
 	}
 }

@@ -13,6 +13,9 @@ public class Tank : MonoBehaviour {
 	public float speed;
 	public float shotTimer; // Wait this amount of time, then fire a shot, and repeat.
 
+	// PRIVATE
+	private bool canShoot;
+
 	// COMPONENT
 	private EnemyAim nmeAim;
 	private Transform tm;
@@ -24,6 +27,7 @@ public class Tank : MonoBehaviour {
 	}
 
 	private void OnEnable() {
+		canShoot = true;
 		StartCoroutine(AimAndShoot());
 	}
 
@@ -33,9 +37,13 @@ public class Tank : MonoBehaviour {
 
 	// At a regular interval (shotTimer), shoot an aimed bullet using our EnemyAim component.
 	private IEnumerator AimAndShoot() {
-		while (true) {
+		while (canShoot) {
 			yield return new WaitForSeconds(shotTimer);
-			nmeAim.Shoot(shotType);
+			if (canShoot) { nmeAim.Shoot(shotType); }
 		}
+	}
+
+	public void StopShoot() {
+		canShoot = false;
 	}
 }
