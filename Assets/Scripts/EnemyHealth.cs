@@ -39,11 +39,11 @@ public class EnemyHealth : MonoBehaviour {
 	private void OnEnable() {
 		float threat = ThreatLevel.instance.GetThreatPercent();
 		if (threat < 1/3f) {
-			nmeColor = Color.Lerp(Color.yellow, Color.green, (threat / 1/3f));
+			nmeColor = Color.Lerp(Color.yellow, Color.green, (threat / (1/3f)));
 		} else if (threat < 2/3f) {
-			nmeColor = Color.Lerp(Color.green, Color.cyan, ((threat - 1/3f) / 1/3f));
+			nmeColor = Color.Lerp(Color.green, Color.cyan, ((threat - (1/3f)) / (1/3f)));
 		} else {
-			nmeColor = Color.Lerp(Color.cyan, Color.magenta, ((threat - 2/3f) / 1/3f));
+			nmeColor = Color.Lerp(Color.cyan, Color.magenta, ((threat - (2/3f)) / (1/3f)));
 		}
 		sr.color = nmeColor;
 		SetupFlashPalette();
@@ -106,6 +106,8 @@ public class EnemyHealth : MonoBehaviour {
 	private void OnCollisionEnter2D(Collision2D pColl) {
 		if (pColl.gameObject.tag.Equals("PlayerBullet") && !destroyed) {
 			pColl.gameObject.SetActive(false);
+			Damage();
+		} else if (pColl.gameObject.tag.Equals("Player") && !destroyed) { // If we touch the player, receive damage.
 			Damage();
 		}
 	}
