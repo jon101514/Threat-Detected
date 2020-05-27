@@ -40,6 +40,7 @@ public class PlayerCollision : MonoBehaviour {
 				PlayerSpawner.instance.AddLives(-1);
 				ThreatLevel.instance.AddLifeLevel(-64f); // Reset the life level parameter.
 				PlayerSpawner.instance.Respawn();
+				SFXManager.instance.PlayClip("destroy");
 				gameObject.SetActive(false);
 			}
 		}

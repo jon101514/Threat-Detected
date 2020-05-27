@@ -64,6 +64,7 @@ public class EnemyHealth : MonoBehaviour {
 		Vector2 randPos = new Vector2(transform.position.x + Random.Range(-1f, 1f), transform.position.y + Random.Range(-1f, 1f));
 		FXManager.instance.ShowFX("hitspark", randPos, transform.localScale);
 		if (!hidden) { StartCoroutine(ColorFlash()); }
+		SFXManager.instance.PlayClip("hit");
 		DestroyCheck();
 	}
 
@@ -96,6 +97,8 @@ public class EnemyHealth : MonoBehaviour {
 			FXManager.instance.ShowFX("explosion", transform.position, transform.localScale);
 			// Add to score.
 			ScoreManager.instance.AddScore(pointsOnDestroy);
+
+			SFXManager.instance.PlayClip("destroy");
 
 			// Make note of it with the Threat Level.
 			ThreatLevel.instance.AddKillLevel(1/2f);

@@ -194,6 +194,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -202,6 +206,130 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4742776935306820, guid: ddca20d60558dc24d8d22d42ddc9bb96,
     type: 2}
   m_PrefabInternal: {fileID: 40232717}
+--- !u!1 &55582449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 55582451}
+  - component: {fileID: 55582450}
+  m_Layer: 0
+  m_Name: Jukebox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &55582450
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 55582449}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f767b5f3ea6ef0e45aedd5bbd4cd305d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &55582451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 55582449}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &56042340
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,6 +523,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
   m_IsPrefabAsset: 0
@@ -440,6 +572,10 @@ Prefab:
     - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
       propertyPath: m_Name
       value: Tank (R) Leveled Spawn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
@@ -595,6 +731,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (L) Leveled Spawn (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
   m_IsPrefabAsset: 0
@@ -674,6 +814,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -720,6 +864,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
   m_IsPrefabAsset: 0
@@ -737,6 +885,7 @@ GameObject:
   - component: {fileID: 265236586}
   - component: {fileID: 265236587}
   - component: {fileID: 265236588}
+  - component: {fileID: 265236589}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -888,6 +1037,101 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c12e385af13b34f9f88b2fe12a821e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &265236589
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 265236581}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &272388707 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4742776935306820, guid: ddca20d60558dc24d8d22d42ddc9bb96,
@@ -1003,6 +1247,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -1058,6 +1306,10 @@ Prefab:
     - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_Name
       value: Exploder Leveled Spawn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
@@ -1148,6 +1400,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -1194,6 +1450,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -1239,6 +1499,10 @@ Prefab:
     - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_Name
       value: Exploder Leveled Spawn (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
@@ -1319,6 +1583,145 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &471534888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 471534891}
+  - component: {fileID: 471534890}
+  - component: {fileID: 471534889}
+  m_Layer: 0
+  m_Name: SFX Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &471534889
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 471534888}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &471534890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 471534888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 392d5710f5f7555469a85a682c3dc5d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shot: {fileID: 8300000, guid: 25d14a4f83ee57d45be4f6f152ae82b5, type: 3}
+  hit: {fileID: 8300000, guid: 56671f5d173b206439badf2ac80e1f4b, type: 3}
+  destroy: {fileID: 8300000, guid: bfc90719390e8d8438877aa797ad8d01, type: 3}
+--- !u!4 &471534891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 471534888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &480813023
 Prefab:
   m_ObjectHideFlags: 0
@@ -1361,6 +1764,10 @@ Prefab:
     - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
       propertyPath: m_Name
       value: Tank (L) Leveled Spawn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
@@ -1413,6 +1820,10 @@ Prefab:
     - target: {fileID: 4742776935306820, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
@@ -1538,6 +1949,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 38
       objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
   m_IsPrefabAsset: 0
@@ -1583,6 +1998,10 @@ Prefab:
     - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_Name
       value: Exploder Leveled Spawn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
@@ -1634,6 +2053,10 @@ Prefab:
     - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_Name
       value: Exploder Leveled Spawn (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
@@ -1691,6 +2114,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (R) Leveled Spawn (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
   m_IsPrefabAsset: 0
@@ -1741,6 +2168,10 @@ Prefab:
     - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
       propertyPath: m_Name
       value: Tank (R) Leveled Spawn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
@@ -1793,6 +2224,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (R) Leveled Spawn (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
   m_IsPrefabAsset: 0
@@ -1843,6 +2278,10 @@ Prefab:
     - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
       propertyPath: m_Name
       value: Tank (L) Leveled Spawn (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
@@ -1895,6 +2334,10 @@ Prefab:
       propertyPath: m_Name
       value: Cannon Leveled Spawn (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1119260865835410, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
   m_IsPrefabAsset: 0
@@ -1946,6 +2389,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -1991,6 +2438,10 @@ Prefab:
     - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_Name
       value: Exploder Leveled Spawn (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
@@ -2130,6 +2581,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -2180,6 +2635,10 @@ Prefab:
     - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
       propertyPath: m_Name
       value: Tank (R) Leveled Spawn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
@@ -2356,6 +2815,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -2401,6 +2864,10 @@ Prefab:
     - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
       propertyPath: m_Name
       value: Tank (R) Leveled Spawn (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
@@ -2452,6 +2919,10 @@ Prefab:
     - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
@@ -2559,6 +3030,10 @@ Prefab:
     - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_Name
       value: Exploder Leveled Spawn (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
@@ -2675,6 +3150,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (R) Leveled Spawn (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
   m_IsPrefabAsset: 0
@@ -2725,6 +3204,10 @@ Prefab:
     - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_Name
       value: Exploder Leveled Spawn (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
@@ -3019,6 +3502,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -3070,6 +3557,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
   m_IsPrefabAsset: 0
@@ -3115,6 +3606,10 @@ Prefab:
     - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
       propertyPath: m_Name
       value: Tank (L) Leveled Spawn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
@@ -3162,6 +3657,10 @@ Prefab:
     - target: {fileID: 4132749319922840, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
@@ -3311,6 +3810,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -3356,6 +3859,10 @@ Prefab:
     - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_Name
       value: Exploder Leveled Spawn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
@@ -3403,6 +3910,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
   m_IsPrefabAsset: 0
@@ -3448,6 +3959,10 @@ Prefab:
     - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
       propertyPath: m_Name
       value: Tank (R) Leveled Spawn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
@@ -3499,6 +4014,10 @@ Prefab:
     - target: {fileID: 1119260865835410, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
       propertyPath: m_Name
       value: Cannon Leveled Spawn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1119260865835410, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
@@ -3578,6 +4097,10 @@ Prefab:
     - target: {fileID: 1119260865835410, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
       propertyPath: m_Name
       value: Cannon Leveled Spawn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1119260865835410, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
@@ -3659,6 +4182,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (L) Leveled Spawn (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
   m_IsPrefabAsset: 0
@@ -3715,6 +4242,10 @@ Prefab:
       propertyPath: m_Name
       value: Cannon Leveled Spawn (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1119260865835410, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
   m_IsPrefabAsset: 0
@@ -3761,6 +4292,10 @@ Prefab:
     - target: {fileID: 4698631819203070, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
       propertyPath: m_RootOrder
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1119260865835410, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
@@ -3813,6 +4348,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
   m_IsPrefabAsset: 0
@@ -3864,6 +4403,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -3914,6 +4457,10 @@ Prefab:
     - target: {fileID: 1119260865835410, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
       propertyPath: m_Name
       value: Cannon Leveled Spawn (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1119260865835410, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
@@ -3993,6 +4540,10 @@ Prefab:
     - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
@@ -4424,6 +4975,10 @@ Prefab:
       propertyPath: m_Name
       value: Cannon Leveled Spawn (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1119260865835410, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
   m_IsPrefabAsset: 0
@@ -4474,6 +5029,10 @@ Prefab:
     - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
       propertyPath: m_Name
       value: Tank (L) Leveled Spawn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
@@ -4526,6 +5085,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
   m_IsPrefabAsset: 0
@@ -4571,6 +5134,10 @@ Prefab:
     - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
@@ -4710,6 +5277,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (L) Leveled Spawn (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
   m_IsPrefabAsset: 0
@@ -4766,6 +5337,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
   m_IsPrefabAsset: 0
@@ -4812,6 +5387,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
   m_IsPrefabAsset: 0
@@ -4857,6 +5436,10 @@ Prefab:
     - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
       propertyPath: m_Name
       value: Tank (L) Leveled Spawn (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
@@ -4909,6 +5492,10 @@ Prefab:
       propertyPath: m_Name
       value: Cannon Leveled Spawn (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1119260865835410, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
   m_IsPrefabAsset: 0
@@ -4950,6 +5537,10 @@ Prefab:
     - target: {fileID: 4132749319922840, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
       propertyPath: m_RootOrder
       value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
@@ -5089,6 +5680,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (L) Leveled Spawn (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
   m_IsPrefabAsset: 0
@@ -5139,6 +5734,10 @@ Prefab:
     - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_Name
       value: Exploder Leveled Spawn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
@@ -5253,6 +5852,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
   m_IsPrefabAsset: 0
@@ -5298,6 +5901,10 @@ Prefab:
     - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_Name
       value: Exploder Leveled Spawn (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
@@ -5412,6 +6019,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (R) Leveled Spawn (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
   m_IsPrefabAsset: 0
@@ -5462,6 +6073,10 @@ Prefab:
     - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
       propertyPath: m_Name
       value: Tank (L) Leveled Spawn (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
@@ -5514,6 +6129,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -5565,6 +6184,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
   m_IsPrefabAsset: 0
@@ -5610,6 +6233,10 @@ Prefab:
     - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_Name
       value: Exploder Leveled Spawn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
@@ -5657,6 +6284,10 @@ Prefab:
       propertyPath: m_Name
       value: Cannon Leveled Spawn (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1119260865835410, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
   m_IsPrefabAsset: 0
@@ -5702,6 +6333,10 @@ Prefab:
     - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_Name
       value: Exploder Leveled Spawn (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
@@ -5811,6 +6446,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -5862,6 +6501,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -5912,6 +6555,10 @@ Prefab:
     - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
@@ -6173,6 +6820,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
   m_IsPrefabAsset: 0
@@ -6259,6 +6910,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -6314,6 +6969,10 @@ Prefab:
     - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
       propertyPath: m_Name
       value: Tank (L) Leveled Spawn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
@@ -6441,6 +7100,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -6486,6 +7149,10 @@ Prefab:
     - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
       propertyPath: m_Name
       value: Tank (L) Leveled Spawn (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 600e9618b51b21c43a304d4b455f7615, type: 2}
@@ -6538,6 +7205,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
   m_IsPrefabAsset: 0
@@ -6584,6 +7255,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -6629,6 +7304,10 @@ Prefab:
     - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
       propertyPath: m_Name
       value: Tank (R) Leveled Spawn (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
@@ -6777,6 +7456,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -6833,6 +7516,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -6878,6 +7565,10 @@ Prefab:
     - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_Name
       value: Exploder Leveled Spawn (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
@@ -7076,6 +7767,10 @@ Prefab:
       propertyPath: m_Name
       value: Cannon Leveled Spawn (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1119260865835410, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7322cfdc2b57d144b9f1f08ad79fa363, type: 2}
   m_IsPrefabAsset: 0
@@ -7127,6 +7822,10 @@ Prefab:
       propertyPath: m_Name
       value: Tank (F) Leveled Spawn (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1223186959926762, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800b9abcba0372e4d90c96598a629154, type: 2}
   m_IsPrefabAsset: 0
@@ -7173,6 +7872,10 @@ Prefab:
       propertyPath: m_Name
       value: Exploder Leveled Spawn (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
   m_IsPrefabAsset: 0
@@ -7218,6 +7921,10 @@ Prefab:
     - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_Name
       value: Exploder Leveled Spawn (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
@@ -7269,6 +7976,10 @@ Prefab:
     - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
       propertyPath: m_Name
       value: Tank (R) Leveled Spawn (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155149771780016, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98e0f126dc7d184db6dcaee7489145f, type: 2}
@@ -7325,6 +8036,10 @@ Prefab:
     - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
       propertyPath: m_Name
       value: Exploder Leveled Spawn (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384530123057878, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddca20d60558dc24d8d22d42ddc9bb96, type: 2}

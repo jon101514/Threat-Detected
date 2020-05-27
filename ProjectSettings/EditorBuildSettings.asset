@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title Screen.unity
     guid: bd2dd919db329d3479c86a7c519f2e7a
+  - enabled: 0
+    path: Assets/Scenes/Jam_Level.unity
+    guid: aa9c9f5a5a5caa84090f4b8e3339816a
   - enabled: 1
     path: Assets/Scenes/Level.unity
-    guid: aa9c9f5a5a5caa84090f4b8e3339816a
+    guid: 4c0c8521d10d3e746aecb24db96e37aa
   - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: 77c6d2307014170498c083c20d71270e

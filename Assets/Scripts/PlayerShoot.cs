@@ -32,11 +32,12 @@ public class PlayerShoot : MonoBehaviour {
 	}
 
 	private void Update() {
-		if (Input.GetKeyDown(KeyCode.J)) {
+		if (Input.GetKeyDown(KeyCode.J)) {			
 			for (int i = 0; i < cannons.Count; i++) { // Fire all cannons.
 				FireFromPool(cannons[i]);
 				ThreatLevel.instance.AddFireLevel(FIRE_THREAT); // Add FIRE_THREAT for each bullet fired.
 			}
+			SFXManager.instance.PlayClip("shot");
 		}
 	}
 
